@@ -3,65 +3,15 @@
  * Search YouTube and pick a result to download
  */
 
-const ytsr = require('ytsr');
 const ytdl = require('ytdl-core');
 const fs = require('fs');
 const path = require('path');
 const { promisify } = require('util');
-const ffmpeg = require('fluent-ffmpeg');
 const sessionManager = require('../../utils/sessionManager');
+const { searchYouTube, downloadMusic } = require('../../utils/youtube');
+const { formatViews, sanitizeFilename } = require('../../utils/formatters');
 
 const unlinkAsync = promisify(fs.unlink);
-
-/**
- * Format number to human-readable (e.g., 1200000 -> 1.2M)
- */
-function formatViews(views) {
-  if (!views) return 'N/A';
-  if (views >= 1000000000) return (views / 1000000000).toFixed(1) + 'B';
-  if (views >= 1000000) return (views / 1000000).toFixed(1) + 'M';
-  if (views >= 1000) return (views / 1000).toFixed(1) + 'K';
-  return views.toString();
-}
-
-/**
- * Search YouTube for videos
- */
-async function searchYouTube(query) {
-  try {
-    const searchResults = await ytsr(query, { limit: 5, safeSearch: true });
-    const videos = searchResults.items.filter(item => item.type === 'video');
-    return videos;
-  } catch (error) {
-    console.error('YouTube search error:', error);
-    return [];
-  }
-}
-
-/**
- * Download and convert YouTube video to MP3
- */
-async function downloadMusic(videoUrl, outputPath) {
-  return new Promise((resolve, reject) => {
-    const stream = ytdl(videoUrl, {
-      quality: 'highestaudio',
-      filter: 'audioonly'
-    });
-
-    ffmpeg(stream)
-      .audioBitrate(128)
-      .save(outputPath)
-      .on('end', () => resolve(outputPath))
-      .on('error', (err) => reject(err));
-  });
-}
-
-/**
- * Sanitize filename to remove invalid characters
- */
-function sanitizeFilename(name) {
-  return name.replace(/[<>:"/\\|?*]/g, '_').substring(0, 200);
-}
 
 module.exports = {
   name: 'search',
