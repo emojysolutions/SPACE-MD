@@ -1,0 +1,262 @@
+[
+    {
+        "id": 1,
+        "quote": "The only way to do great work is to love what you do.",
+        "author": "Steve Jobs"
+    },
+    {
+        "id": 2,
+        "quote": "Innovation distinguishes between a leader and a follower.",
+        "author": "Steve Jobs"
+    },
+    {
+        "id": 3,
+        "quote": "The future belongs to those who believe in the beauty of their dreams.",
+        "author": "Eleanor Roosevelt"
+    },
+    {
+        "id": 4,
+        "quote": "It is during our darkest moments that we must focus to see the light.",
+        "author": "Aristotle"
+    },
+    {
+        "id": 5,
+        "quote": "The only impossible journey is the one you never begin.",
+        "author": "Tony Robbins"
+    },
+    {
+        "id": 6,
+        "quote": "Life is what happens when you're busy making other plans.",
+        "author": "John Lennon"
+    },
+    {
+        "id": 7,
+        "quote": "The way to get started is to quit talking and begin doing.",
+        "author": "Walt Disney"
+    },
+    {
+        "id": 8,
+        "quote": "Don't let yesterday take up too much of today.",
+        "author": "Will Rogers"
+    },
+    {
+        "id": 9,
+        "quote": "You learn more from failure than from success. Don't let it stop you.",
+        "author": "Unknown"
+    },
+    {
+        "id": 10,
+        "quote": "It's not whether you get knocked down, it's whether you get up.",
+        "author": "Vince Lombardi"
+    },
+    {
+        "id": 11,
+        "quote": "Believe you can and you're halfway there.",
+        "author": "Theodore Roosevelt"
+    },
+    {
+        "id": 12,
+        "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+        "author": "Winston Churchill"
+    },
+    {
+        "id": 13,
+        "quote": "The best time to plant a tree was 20 years ago. The second best time is now.",
+        "author": "Chinese Proverb"
+    },
+    {
+        "id": 14,
+        "quote": "Your time is limited, don't waste it living someone else's life.",
+        "author": "Steve Jobs"
+    },
+    {
+        "id": 15,
+        "quote": "Whether you think you can or you think you can't, you're right.",
+        "author": "Henry Ford"
+    },
+    {
+        "id": 16,
+        "quote": "The only limit to our realization of tomorrow will be our doubts of today.",
+        "author": "Franklin D. Roosevelt"
+    },
+    {
+        "id": 17,
+        "quote": "Do what you can, with what you have, where you are.",
+        "author": "Theodore Roosevelt"
+    },
+    {
+        "id": 18,
+        "quote": "Everything you've ever wanted is on the other side of fear.",
+        "author": "George Addair"
+    },
+    {
+        "id": 19,
+        "quote": "Success is walking from failure to failure with no loss of enthusiasm.",
+        "author": "Winston Churchill"
+    },
+    {
+        "id": 20,
+        "quote": "The only person you are destined to become is the person you decide to be.",
+        "author": "Ralph Waldo Emerson"
+    },
+    {
+        "id": 21,
+        "quote": "Go confidently in the direction of your dreams! Live the life you've imagined.",
+        "author": "Henry David Thoreau"
+    },
+    {
+        "id": 22,
+        "quote": "Believe in yourself. You are braver than you think, more talented than you know, and capable of more than you imagine.",
+        "author": "Roy T. Bennett"
+    },
+    {
+        "id": 23,
+        "quote": "I learned that courage was not the absence of fear, but the triumph over it.",
+        "author": "Nelson Mandela"
+    },
+    {
+        "id": 24,
+        "quote": "There is only one way to avoid criticism: do nothing, say nothing, and be nothing.",
+        "author": "Aristotle"
+    },
+    {
+        "id": 25,
+        "quote": "The question isn't who is going to let me; it's who is going to stop me.",
+        "author": "Ayn Rand"
+    },
+    {
+        "id": 26,
+        "quote": "The harder you work for something, the greater you'll feel when you achieve it.",
+        "author": "Unknown"
+    },
+    {
+        "id": 27,
+        "quote": "Dream bigger. Do bigger.",
+        "author": "Unknown"
+    },
+    {
+        "id": 28,
+        "quote": "Don't stop when you're tired. Stop when you're done.",
+        "author": "Unknown"
+    },
+    {
+        "id": 29,
+        "quote": "Wake up with determination. Go to bed with satisfaction.",
+        "author": "Unknown"
+    },
+    {
+        "id": 30,
+        "quote": "Do something today that your future self will thank you for.",
+        "author": "Unknown"
+    },
+    {
+        "id": 31,
+        "quote": "Little things make big days.",
+        "author": "Unknown"
+    },
+    {
+        "id": 32,
+        "quote": "It's going to be hard, but hard does not mean impossible.",
+        "author": "Unknown"
+    },
+    {
+        "id": 33,
+        "quote": "Don't wait for opportunity. Create it.",
+        "author": "Unknown"
+    },
+    {
+        "id": 34,
+        "quote": "Sometimes we're tested not to show our weaknesses, but to discover our strengths.",
+        "author": "Unknown"
+    },
+    {
+        "id": 35,
+        "quote": "The key to success is to focus on goals, not obstacles.",
+        "author": "Unknown"
+    },
+    {
+        "id": 36,
+        "quote": "Dream it. Wish it. Do it.",
+        "author": "Unknown"
+    },
+    {
+        "id": 37,
+        "quote": "Great things never come from comfort zones.",
+        "author": "Unknown"
+    },
+    {
+        "id": 38,
+        "quote": "Success doesn't just find you. You have to go out and get it.",
+        "author": "Unknown"
+    },
+    {
+        "id": 39,
+        "quote": "The way I see it, if you want the rainbow, you gotta put up with the rain.",
+        "author": "Dolly Parton"
+    },
+    {
+        "id": 40,
+        "quote": "I am not a product of my circumstances. I am a product of my decisions.",
+        "author": "Stephen Covey"
+    },
+    {
+        "id": 41,
+        "quote": "When everything seems to be going against you, remember that the airplane takes off against the wind, not with it.",
+        "author": "Henry Ford"
+    },
+    {
+        "id": 42,
+        "quote": "It's not what happens to you, but how you react to it that matters.",
+        "author": "Epictetus"
+    },
+    {
+        "id": 43,
+        "quote": "Don't watch the clock; do what it does. Keep going.",
+        "author": "Sam Levenson"
+    },
+    {
+        "id": 44,
+        "quote": "A year from now you may wish you had started today.",
+        "author": "Karen Lamb"
+    },
+    {
+        "id": 45,
+        "quote": "You don't have to be great to start, but you have to start to be great.",
+        "author": "Zig Ziglar"
+    },
+    {
+        "id": 46,
+        "quote": "The secret of getting ahead is getting started.",
+        "author": "Mark Twain"
+    },
+    {
+        "id": 47,
+        "quote": "All our dreams can come true, if we have the courage to pursue them.",
+        "author": "Walt Disney"
+    },
+    {
+        "id": 48,
+        "quote": "The future depends on what you do today.",
+        "author": "Mahatma Gandhi"
+    },
+    {
+        "id": 49,
+        "quote": "Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.",
+        "author": "Roy T. Bennett"
+    },
+    {
+        "id": 50,
+        "quote": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+        "author": "Ralph Waldo Emerson"
+    },
+    {
+        "id": 51,
+        "quote": "In order to succeed, we must first believe that we can.",
+        "author": "Nikos Kazantzakis"
+    },
+    {
+        "id": 52,
+        "quote": "Start where you are. Use what you have. Do what you can.",
+        "author": "Arthur Ashe"
+    }
+]
