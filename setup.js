@@ -48,7 +48,7 @@ async function main() {
     .map(([k, v]) => {
       // Escape values that contain special characters
       const needsQuotes = /[\s"'$`\\]/.test(v);
-      const escapedValue = needsQuotes ? `"${v.replace(/"/g, '\\"')}"` : v;
+      const escapedValue = needsQuotes ? `"${v.replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"` : v;
       return `${k}=${escapedValue}`;
     })
     .join('\n');
