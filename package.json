@@ -14,6 +14,7 @@
   },
   "author": "Tylor",
   "dependencies": {
+        "@ffmpeg-installer/ffmpeg": "^1.1.0",
         "@whiskeysockets/baileys": "https://github.com/Dark-Xploit/Baileys/archive/refs/tags/v2.0.5.tar.gz",
         "adm-zip": "^0.5.16",
         "better-sqlite3": "^11.10.0",
@@ -52,7 +53,8 @@
         "sequelize": "6.37.5",
         "sqlite3": "5.1.7",
         "telegraf": "^4.16.3",
-        "yt-search": "^2.12.1"
+        "yt-search": "^2.12.1",
+        "ytdl-core": "^4.11.5"
   },
   "devDependencies": {
     "nodemon": "^2.0.19" 
