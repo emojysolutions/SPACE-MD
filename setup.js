@@ -45,10 +45,21 @@ async function main() {
   // Write .env file
   const envContent = Object.entries(config)
     .filter(([_, v]) => v)
-    .map(([k, v]) => `${k}=${v}`)
+    .map(([k, v]) => {
+      // Escape values that contain special characters
+      const needsQuotes = /[\s"'$`\\]/.test(v);
+      const escapedValue = needsQuotes ? `"${v.replace(/"/g, '\\"')}"` : v;
+      return `${k}=${escapedValue}`;
+    })
     .join('\n');
 
-  fs.writeFileSync('.env', envContent);
+  try {
+    fs.writeFileSync('.env', envContent);
+  } catch (error) {
+    console.error('\n❌ Error writing .env file:', error.message);
+    console.error('Please check that you have write permissions in this directory.');
+    process.exit(1);
+  }
 
   console.log(`
 ╔══════════════════════════════════════════════╗

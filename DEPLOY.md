@@ -133,7 +133,7 @@ Set your webhook URL to: `https://your-railway-url.up.railway.app/webhook`
 - **Name**: queen-angela-md
 - **Environment**: Node
 - **Build Command**: `npm install`
-- **Start Command**: `node index.js`
+- **Start Command**: `node start.js`
 
 ### Step 4: Add Environment Variables
 Go to **Environment** tab and add:
@@ -474,7 +474,7 @@ Response:
 {
   "status": "online",
   "bot": "Queen Angela MD",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "uptime": 3600,
   "timestamp": "2024-01-01T12:00:00.000Z",
   "memory": {
@@ -513,7 +513,7 @@ For support:
 2. Upload code or connect GitHub
 3. npm install
 4. Set environment variables
-5. Start with: node index.js
+5. Start with: node start.js
 6. Configure webhook
 ```
 

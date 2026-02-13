@@ -92,23 +92,31 @@ app.get('/webhook', (req, res) => {
   const token = req.query['hub.verify_token'];
   const challenge = req.query['hub.challenge'];
   
-  const verifyToken = process.env.VERIFY_TOKEN || 'queen_angela_verify';
+  const verifyToken = process.env.VERIFY_TOKEN;
+  
+  if (!verifyToken) {
+    console.error('⚠️  WARNING: VERIFY_TOKEN not set. Webhook verification will fail.');
+    return res.status(500).send('Server configuration error: VERIFY_TOKEN not set');
+  }
   
   if (mode === 'subscribe' && token === verifyToken) {
-    console.log('Webhook verified successfully!');
+    console.log('✅ Webhook verified successfully!');
     res.status(200).send(challenge);
   } else {
+    console.log('❌ Webhook verification failed');
     res.sendStatus(403);
   }
 });
 
 app.post('/webhook', express.json(), (req, res) => {
-  console.log('Webhook POST received:', JSON.stringify(req.body, null, 2));
+  // TODO: Implement webhook signature verification for production
+  // See: https://developers.facebook.com/docs/graph-api/webhooks/getting-started
+  console.log('📨 Webhook POST received');
   res.sendStatus(200);
 });
 
 // Start HTTP server
-const PORT = settings.PORT || 3000;
+const PORT = process.env.PORT || settings.PORT || 3000;
 const server = app.listen(PORT, () => {
   console.log(`\n${'='.repeat(50)}`);
   console.log(`👑 Queen Angela MD - HTTP Server Started`);
