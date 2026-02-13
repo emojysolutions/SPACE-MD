@@ -14,7 +14,7 @@ const ffmpeg = require('fluent-ffmpeg');
  */
 async function searchYouTube(query) {
   try {
-    const searchResults = await ytsr(query, { limit: 5, safeSearch: true });
+    const searchResults = await ytsr(query, { limit: 5 });
     const videos = searchResults.items.filter(item => item.type === 'video');
     return videos;
   } catch (error) {

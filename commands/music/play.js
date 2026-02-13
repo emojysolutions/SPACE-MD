@@ -12,6 +12,9 @@ const { formatViews, formatDuration, sanitizeFilename } = require('../../utils/f
 
 const unlinkAsync = promisify(fs.unlink);
 
+// Constants
+const MAX_DURATION_SECONDS = 600; // 10 minutes
+
 module.exports = {
   name: 'play',
   aliases: ['music', 'song', 'yt', 'youtube', 'dl'],
@@ -82,8 +85,8 @@ module.exports = {
             : parts[0] * 3600 + parts[1] * 60 + parts[2];
           duration = video.duration;
           
-          // Check if video is too long (>10 minutes = 600 seconds)
-          if (totalSeconds > 600) {
+          // Check if video is too long
+          if (totalSeconds > MAX_DURATION_SECONDS) {
             return await sendMessage(from, '⚠️ That track is over 10 minutes. Try a shorter one!');
           }
         } else {

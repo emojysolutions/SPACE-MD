@@ -3,10 +3,13 @@
  * Manages temporary session data like search results with auto-expiration
  */
 
+// Constants
+const DEFAULT_TTL_MS = 60000; // 60 seconds
+
 class SessionManager {
   constructor() {
     this.sessions = new Map();
-    this.defaultTTL = 60000; // 60 seconds
+    this.defaultTTL = DEFAULT_TTL_MS;
   }
 
   /**

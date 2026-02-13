@@ -13,6 +13,9 @@ const { formatViews, sanitizeFilename } = require('../../utils/formatters');
 
 const unlinkAsync = promisify(fs.unlink);
 
+// Constants
+const SEARCH_SESSION_TTL_MS = 60000; // 60 seconds
+
 module.exports = {
   name: 'search',
   aliases: ['ytsearch', 'find'],
@@ -48,7 +51,7 @@ module.exports = {
       const topResults = results.slice(0, 3);
       
       // Store results in session
-      sessionManager.set(from, 'search_results', topResults, 60000); // 60 seconds TTL
+      sessionManager.set(from, 'search_results', topResults, SEARCH_SESSION_TTL_MS);
       
       // Format message with results
       let message = '🔍 *YouTube Search Results* 🔍\n━━━━━━━━━━━━━━━━━━━━━━━━━\n\n';
