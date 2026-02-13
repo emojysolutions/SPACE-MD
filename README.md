@@ -43,3 +43,61 @@
         <img alt="Download zip" src="https://img.shields.io/badge/Download-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkorange&color=darkorange"/>
     </a>
 </p>
+
+---
+
+## 🤖 Multi-AI Chat System
+
+SPACE-MD now includes an advanced AI chat system with support for multiple AI providers!
+
+### 🚀 Available AI Models
+
+Chat with different AI models directly in WhatsApp:
+
+| Command | AI Model | Provider |
+|---------|----------|----------|
+| `!gpt <message>` | ChatGPT GPT-4o | OpenAI |
+| `!gpt4 <message>` | ChatGPT GPT-4o | OpenAI |
+| `!claude <message>` | Claude Opus | Anthropic |
+| `!sonnet <message>` | Claude Sonnet | Anthropic |
+| `!gemini <message>` | Google Gemini Pro | Google |
+| `!deepseek <message>` | DeepSeek | DeepSeek |
+| `!ai <message>` | Smart Auto-Router | Auto-selects best available |
+
+### 🎨 Special AI Features
+
+- **`!imagine <prompt>`** - Generate images with DALL-E 3
+- **`!vision <question>`** - Analyze images with AI Vision (send with image)
+- **`!persona <name>`** - Set AI personality (pirate, shakespeare, yoda, scientist, comedian, poet, teacher, coder, chef)
+- **`!ai models`** - Show all available AI models
+- **`!ai clear`** - Clear conversation history
+
+### 🔧 Setup AI Features
+
+To enable AI features, add API keys to your `.env` file:
+
+```env
+# OpenAI (for GPT-4o, DALL-E 3, Vision)
+OPENAI_API_KEY=sk-your-openai-key
+
+# Anthropic (for Claude Opus, Claude Sonnet)
+ANTHROPIC_API_KEY=sk-ant-your-anthropic-key
+
+# Google (for Gemini Pro)
+GOOGLE_AI_KEY=your-google-ai-key
+
+# DeepSeek
+DEEPSEEK_API_KEY=your-deepseek-key
+```
+
+You can enable any combination of providers - the bot will automatically detect which ones are configured!
+
+### 💬 Conversation Memory
+
+- Each AI maintains conversation history per user
+- Maximum 20 messages per conversation
+- Use `!gpt clear` or `!ai clear` to reset
+
+### 📚 Full Documentation
+
+For detailed usage, examples, and best practices, see [commands/ai/README.md](commands/ai/README.md)
