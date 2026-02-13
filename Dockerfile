@@ -1,7 +1,4 @@
-FROM node:lts
-
-# Install dependencies
-RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg imagemagick webp && apt-get clean
+FROM node:18-alpine
 
 # Set working directory
 WORKDIR /app
@@ -9,8 +6,8 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install && npm cache clean --force
+# Install production dependencies only
+RUN npm install --production && npm cache clean --force
 
 # Copy application code
 COPY . .
@@ -18,8 +15,8 @@ COPY . .
 # Expose port
 EXPOSE 3000
 
-# Set environment
-ENV NODE_ENV production
+# Set environment to production
+ENV NODE_ENV=production
 
-# Run command
-CMD ["npm", "run", "start"]
+# Run the application
+CMD ["node", "index.js"]
