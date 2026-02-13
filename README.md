@@ -43,3 +43,43 @@
         <img alt="Download zip" src="https://img.shields.io/badge/Download-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=darkorange&color=darkorange"/>
     </a>
 </p>
+
+---
+
+## 🎵 Music Download Feature
+
+SPACE-MD now supports YouTube music downloads with two convenient modes:
+
+### Commands
+
+#### `!play <song name or URL>`
+Download music by searching with a song name or providing a direct YouTube URL.
+
+**Examples:**
+```
+!play Blinding Lights The Weeknd
+!play Shape of You Ed Sheeran
+!play https://youtube.com/watch?v=dQw4w9WgXcQ
+```
+
+**Aliases:** `!music`, `!song`, `!yt`, `!youtube`, `!dl`
+
+#### `!search <song name>`
+Search YouTube and pick from the top 3 results.
+
+**Examples:**
+```
+!search Adele Hello
+!search Imagine Dragons Believer
+```
+
+After searching, reply with **1**, **2**, or **3** to download your chosen result.
+
+**Aliases:** `!ytsearch`, `!find`
+
+### ⚠️ Legal Disclaimer
+
+**IMPORTANT:** Downloading copyrighted content may violate YouTube's Terms of Service and copyright laws in your jurisdiction. This feature is provided for educational purposes only. Use this feature responsibly and only for content you have rights to download or content that is in the public domain. The developers of SPACE-MD are not responsible for any misuse of this feature.
+
+---
+

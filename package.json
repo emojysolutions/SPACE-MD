@@ -52,7 +52,9 @@
         "sequelize": "6.37.5",
         "sqlite3": "5.1.7",
         "telegraf": "^4.16.3",
-        "yt-search": "^2.12.1"
+        "yt-search": "^2.12.1",
+        "ytdl-core": "^4.11.5",
+        "ytsr": "^3.8.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.19" 
