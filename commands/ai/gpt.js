@@ -3,12 +3,12 @@ const fs = require('fs');
 const path = require('path');
 
 /**
- * GPT Command - Chat with ChatGPT (GPT-4o / GPT-5)
+ * GPT Command - Chat with ChatGPT (GPT-4o)
  * Usage: !gpt <message> or !gpt clear
  */
 module.exports = {
   name: 'gpt',
-  description: 'Chat with ChatGPT (GPT-5)',
+  description: 'Chat with ChatGPT (GPT-4o)',
   usage: '!gpt <message> or !gpt clear',
   category: 'AI',
 

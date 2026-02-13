@@ -8,12 +8,12 @@ This directory contains the AI chat system implementation for SPACE-MD WhatsApp 
 
 | Command | Description | Provider |
 |---------|-------------|----------|
-| `!gpt <message>` | Chat with ChatGPT GPT-5 | OpenAI |
+| `!gpt <message>` | Chat with ChatGPT GPT-4o | OpenAI |
 | `!gpt4 <message>` | Chat with ChatGPT GPT-4o | OpenAI |
 | `!claude <message>` | Chat with Claude Opus | Anthropic |
 | `!sonnet <message>` | Chat with Claude Sonnet | Anthropic |
 | `!gemini <message>` | Chat with Google Gemini Pro | Google |
-| `!deepseek <message>` | Chat with DeepSeek | DeepSeek |
+| `!deepseek <message>` | DeepSeek | DeepSeek |
 | `!ai <message>` | Smart router (auto-picks best model) | Auto |
 
 ### Special Commands
@@ -101,7 +101,7 @@ data/
 ### Basic Chat
 ```
 User: !gpt explain quantum computing in simple terms
-Bot: [Detailed explanation from GPT-5]
+Bot: [Detailed explanation from GPT-4o]
 ```
 
 ### With Persona
@@ -133,7 +133,7 @@ Bot: [Uses best available AI model automatically]
 ## 📊 Model Priority (Smart Router)
 
 When using `!ai`, models are selected in this order:
-1. ChatGPT GPT-5
+1. ChatGPT GPT-4o
 2. Claude Opus
 3. Google Gemini Pro
 4. DeepSeek

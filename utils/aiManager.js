@@ -18,8 +18,8 @@ class AIManager {
   initialize() {
     if (process.env.OPENAI_API_KEY) {
       this.providers.set('gpt', { 
-        name: 'ChatGPT (GPT-5)', 
-        model: 'gpt-5', 
+        name: 'ChatGPT (GPT-4o)', 
+        model: 'gpt-4o', 
         provider: 'openai',
         emoji: '🤖'
       });
@@ -133,7 +133,7 @@ class AIManager {
           response = await this.chatClaude(config.model, history, systemPrompt);
           break;
         case 'google':
-          response = await this.chatGemini(message, systemPrompt);
+          response = await this.chatGemini(history, systemPrompt);
           break;
         case 'deepseek':
           response = await this.chatDeepSeek(history, systemPrompt);
@@ -223,16 +223,26 @@ class AIManager {
   /**
    * Google Gemini Implementation
    */
-  async chatGemini(message, systemPrompt = null) {
+  async chatGemini(history, systemPrompt = null) {
     try {
       const { GoogleGenerativeAI } = require('@google/generative-ai');
       const genAI = new GoogleGenerativeAI(process.env.GOOGLE_AI_KEY);
       const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
       
-      // Gemini doesn't have a system prompt in the same way, so we prepend it to the message if needed
-      const fullMessage = systemPrompt 
-        ? `${systemPrompt}\n\nUser: ${message}`
-        : message;
+      // Build conversation context from history
+      let conversationContext = systemPrompt ? `${systemPrompt}\n\n` : '';
+      
+      // Add previous messages for context
+      if (history.length > 1) {
+        for (let i = 0; i < history.length - 1; i++) {
+          const msg = history[i];
+          conversationContext += `${msg.role === 'user' ? 'User' : 'Assistant'}: ${msg.content}\n\n`;
+        }
+      }
+      
+      // Add current message
+      const currentMessage = history[history.length - 1].content;
+      const fullMessage = conversationContext + `User: ${currentMessage}`;
       
       const result = await model.generateContent(fullMessage);
       return result.response.text();

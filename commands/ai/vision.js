@@ -1,6 +1,4 @@
 const aiManager = require('../../utils/aiManager');
-const axios = require('axios');
-const FormData = require('form-data');
 
 /**
  * Vision Command - AI Image Analysis using GPT-4o Vision

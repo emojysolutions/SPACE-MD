@@ -56,7 +56,7 @@ Chat with different AI models directly in WhatsApp:
 
 | Command | AI Model | Provider |
 |---------|----------|----------|
-| `!gpt <message>` | ChatGPT GPT-5 | OpenAI |
+| `!gpt <message>` | ChatGPT GPT-4o | OpenAI |
 | `!gpt4 <message>` | ChatGPT GPT-4o | OpenAI |
 | `!claude <message>` | Claude Opus | Anthropic |
 | `!sonnet <message>` | Claude Sonnet | Anthropic |
@@ -77,7 +77,7 @@ Chat with different AI models directly in WhatsApp:
 To enable AI features, add API keys to your `.env` file:
 
 ```env
-# OpenAI (for GPT-4o, GPT-5, DALL-E 3, Vision)
+# OpenAI (for GPT-4o, DALL-E 3, Vision)
 OPENAI_API_KEY=sk-your-openai-key
 
 # Anthropic (for Claude Opus, Claude Sonnet)
