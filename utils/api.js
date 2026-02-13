@@ -6,6 +6,17 @@ const fs = require('fs');
 // These should be set via environment variables
 const PHONE_NUMBER_ID = process.env.WHATSAPP_PHONE_NUMBER_ID || '';
 const TOKEN = process.env.WHATSAPP_ACCESS_TOKEN || '';
+const API_VERSION = 'v17.0';
+
+/**
+ * Validate WhatsApp API credentials are configured
+ * @throws {Error} If credentials are not configured
+ */
+function validateCredentials() {
+  if (!PHONE_NUMBER_ID || !TOKEN) {
+    throw new Error('WhatsApp API credentials not configured. Set WHATSAPP_PHONE_NUMBER_ID and WHATSAPP_ACCESS_TOKEN environment variables.');
+  }
+}
 
 /**
  * Upload a media file to WhatsApp's media endpoint
@@ -14,9 +25,7 @@ const TOKEN = process.env.WHATSAPP_ACCESS_TOKEN || '';
  * @returns {Promise<string>} Media ID that can be used to send the media
  */
 async function uploadMedia(filePath, mimeType) {
-  if (!PHONE_NUMBER_ID || !TOKEN) {
-    throw new Error('WhatsApp API credentials not configured. Set WHATSAPP_PHONE_NUMBER_ID and WHATSAPP_ACCESS_TOKEN environment variables.');
-  }
+  validateCredentials();
 
   const formData = new FormData();
   formData.append('file', fs.createReadStream(filePath));
@@ -25,7 +34,7 @@ async function uploadMedia(filePath, mimeType) {
 
   try {
     const response = await axios.post(
-      `https://graph.facebook.com/v17.0/${PHONE_NUMBER_ID}/media`,
+      `https://graph.facebook.com/${API_VERSION}/${PHONE_NUMBER_ID}/media`,
       formData,
       {
         headers: {
@@ -47,13 +56,11 @@ async function uploadMedia(filePath, mimeType) {
  * @returns {Promise<void>}
  */
 async function sendAudio(to, mediaId) {
-  if (!PHONE_NUMBER_ID || !TOKEN) {
-    throw new Error('WhatsApp API credentials not configured. Set WHATSAPP_PHONE_NUMBER_ID and WHATSAPP_ACCESS_TOKEN environment variables.');
-  }
+  validateCredentials();
 
   try {
     await axios.post(
-      `https://graph.facebook.com/v17.0/${PHONE_NUMBER_ID}/messages`,
+      `https://graph.facebook.com/${API_VERSION}/${PHONE_NUMBER_ID}/messages`,
       {
         messaging_product: 'whatsapp',
         to,
@@ -81,9 +88,7 @@ async function sendAudio(to, mediaId) {
  * @returns {Promise<void>}
  */
 async function sendDocument(to, mediaId, caption, filename) {
-  if (!PHONE_NUMBER_ID || !TOKEN) {
-    throw new Error('WhatsApp API credentials not configured. Set WHATSAPP_PHONE_NUMBER_ID and WHATSAPP_ACCESS_TOKEN environment variables.');
-  }
+  validateCredentials();
 
   const documentPayload = {
     messaging_product: 'whatsapp',
@@ -102,7 +107,7 @@ async function sendDocument(to, mediaId, caption, filename) {
 
   try {
     await axios.post(
-      `https://graph.facebook.com/v17.0/${PHONE_NUMBER_ID}/messages`,
+      `https://graph.facebook.com/${API_VERSION}/${PHONE_NUMBER_ID}/messages`,
       documentPayload,
       {
         headers: {
@@ -123,13 +128,11 @@ async function sendDocument(to, mediaId, caption, filename) {
  * @returns {Promise<void>}
  */
 async function sendMessage(to, text) {
-  if (!PHONE_NUMBER_ID || !TOKEN) {
-    throw new Error('WhatsApp API credentials not configured. Set WHATSAPP_PHONE_NUMBER_ID and WHATSAPP_ACCESS_TOKEN environment variables.');
-  }
+  validateCredentials();
 
   try {
     await axios.post(
-      `https://graph.facebook.com/v17.0/${PHONE_NUMBER_ID}/messages`,
+      `https://graph.facebook.com/${API_VERSION}/${PHONE_NUMBER_ID}/messages`,
       {
         messaging_product: 'whatsapp',
         to,

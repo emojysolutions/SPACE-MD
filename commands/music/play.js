@@ -203,8 +203,8 @@ _Downloading your track..._ ⏳`;
 _Enjoy your music!_ 🎧`;
 
         await sendDocument(from, mediaId, caption, filename);
-      } catch (uploadError) {
-        console.error('Upload error:', uploadError);
+      } catch (error) {
+        console.error('Upload error:', error);
         const errorMessage = `❌ *Failed to send the audio file.*
 
 The download completed, but there was an error sending the file. This might be due to:
