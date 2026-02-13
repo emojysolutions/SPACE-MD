@@ -1,25 +1,28 @@
-FROM node:lts
+FROM node:18-alpine
 
-# Install dependencies
-RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg imagemagick webp && apt-get clean
+# Install ffmpeg for music features
+RUN apk add --no-cache ffmpeg wget
 
-# Set working directory
 WORKDIR /app
 
 # Copy package files
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install && npm cache clean --force
+# Install production dependencies
+RUN npm install --production
 
-# Copy application code
+# Copy all project files
 COPY . .
+
+# Create required directories
+RUN mkdir -p temp logs
 
 # Expose port
 EXPOSE 3000
 
-# Set environment
-ENV NODE_ENV production
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --retries=3 \
+  CMD wget --no-verbose --tries=1 --spider http://localhost:3000/health || exit 1
 
-# Run command
-CMD ["npm", "run", "start"]
+# Start the bot
+CMD ["node", "start.js"]

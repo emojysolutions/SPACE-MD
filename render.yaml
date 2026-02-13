@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: queen-angela-md
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node start.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: BOT_NAME
+        value: Queen Angela MD
+      - key: WHATSAPP_TOKEN
+        sync: false
+      - key: PHONE_NUMBER_ID
+        sync: false
+      - key: VERIFY_TOKEN
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: GOOGLE_AI_KEY
+        sync: false
+      - key: DEEPSEEK_API_KEY
+        sync: false
