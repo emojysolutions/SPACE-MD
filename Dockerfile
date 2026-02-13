@@ -1,5 +1,8 @@
 FROM node:lts
 
+# Queen Angela MD - Your Royal WhatsApp Assistant
+# A royal, feature-rich WhatsApp bot
+
 # Install dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg imagemagick webp && apt-get clean
 
