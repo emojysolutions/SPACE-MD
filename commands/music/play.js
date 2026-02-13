@@ -229,8 +229,6 @@ Please try again later.`;
       
       const errorMessage = `❌ *An unexpected error occurred.*
 
-Error: ${error.message}
-
 Please try again or contact support if the issue persists.`;
 
       if (context.sendMessage) {

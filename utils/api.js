@@ -6,6 +6,10 @@ const fs = require('fs');
 // These should be set via environment variables
 const PHONE_NUMBER_ID = process.env.WHATSAPP_PHONE_NUMBER_ID || '';
 const TOKEN = process.env.WHATSAPP_ACCESS_TOKEN || '';
+
+// WhatsApp Cloud API version - using v17.0 (released 2023)
+// Note: Check https://developers.facebook.com/docs/graph-api/changelog for version updates
+// Versions are typically supported for ~2 years from release date
 const API_VERSION = 'v17.0';
 
 /**
