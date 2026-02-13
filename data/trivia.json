@@ -1,0 +1,352 @@
+[
+    {
+        "id": 1,
+        "category": "Science",
+        "question": "What is the chemical symbol for gold?",
+        "options": ["A) Go", "B) Au", "C) Gd", "D) Ag"],
+        "answer": "B"
+    },
+    {
+        "id": 2,
+        "category": "Geography",
+        "question": "What is the capital of Australia?",
+        "options": ["A) Sydney", "B) Melbourne", "C) Canberra", "D) Brisbane"],
+        "answer": "C"
+    },
+    {
+        "id": 3,
+        "category": "History",
+        "question": "In which year did World War II end?",
+        "options": ["A) 1943", "B) 1944", "C) 1945", "D) 1946"],
+        "answer": "C"
+    },
+    {
+        "id": 4,
+        "category": "Pop Culture",
+        "question": "Who painted the Mona Lisa?",
+        "options": ["A) Michelangelo", "B) Leonardo da Vinci", "C) Raphael", "D) Donatello"],
+        "answer": "B"
+    },
+    {
+        "id": 5,
+        "category": "Technology",
+        "question": "What does HTTP stand for?",
+        "options": ["A) HyperText Transfer Protocol", "B) High Transfer Text Protocol", "C) HyperText Transmission Protocol", "D) High Tech Transfer Protocol"],
+        "answer": "A"
+    },
+    {
+        "id": 6,
+        "category": "Science",
+        "question": "What is the largest planet in our solar system?",
+        "options": ["A) Saturn", "B) Neptune", "C) Jupiter", "D) Uranus"],
+        "answer": "C"
+    },
+    {
+        "id": 7,
+        "category": "Geography",
+        "question": "Which river is the longest in the world?",
+        "options": ["A) Amazon", "B) Nile", "C) Yangtze", "D) Mississippi"],
+        "answer": "B"
+    },
+    {
+        "id": 8,
+        "category": "History",
+        "question": "Who was the first person to walk on the moon?",
+        "options": ["A) Buzz Aldrin", "B) Yuri Gagarin", "C) Neil Armstrong", "D) John Glenn"],
+        "answer": "C"
+    },
+    {
+        "id": 9,
+        "category": "Pop Culture",
+        "question": "Which movie won the Oscar for Best Picture in 1994?",
+        "options": ["A) Pulp Fiction", "B) Forrest Gump", "C) The Shawshank Redemption", "D) The Lion King"],
+        "answer": "B"
+    },
+    {
+        "id": 10,
+        "category": "Technology",
+        "question": "Who is considered the father of computers?",
+        "options": ["A) Steve Jobs", "B) Bill Gates", "C) Charles Babbage", "D) Alan Turing"],
+        "answer": "C"
+    },
+    {
+        "id": 11,
+        "category": "Science",
+        "question": "What is the speed of light?",
+        "options": ["A) 300,000 km/s", "B) 150,000 km/s", "C) 450,000 km/s", "D) 200,000 km/s"],
+        "answer": "A"
+    },
+    {
+        "id": 12,
+        "category": "Geography",
+        "question": "How many continents are there?",
+        "options": ["A) 5", "B) 6", "C) 7", "D) 8"],
+        "answer": "C"
+    },
+    {
+        "id": 13,
+        "category": "History",
+        "question": "Who wrote the Declaration of Independence?",
+        "options": ["A) George Washington", "B) Thomas Jefferson", "C) Benjamin Franklin", "D) John Adams"],
+        "answer": "B"
+    },
+    {
+        "id": 14,
+        "category": "Pop Culture",
+        "question": "Which band released the album 'Abbey Road'?",
+        "options": ["A) The Rolling Stones", "B) The Beatles", "C) Led Zeppelin", "D) Pink Floyd"],
+        "answer": "B"
+    },
+    {
+        "id": 15,
+        "category": "Technology",
+        "question": "In what year was the first iPhone released?",
+        "options": ["A) 2005", "B) 2006", "C) 2007", "D) 2008"],
+        "answer": "C"
+    },
+    {
+        "id": 16,
+        "category": "Science",
+        "question": "What is the hardest natural substance on Earth?",
+        "options": ["A) Gold", "B) Iron", "C) Diamond", "D) Titanium"],
+        "answer": "C"
+    },
+    {
+        "id": 17,
+        "category": "Geography",
+        "question": "What is the smallest country in the world?",
+        "options": ["A) Monaco", "B) Vatican City", "C) San Marino", "D) Liechtenstein"],
+        "answer": "B"
+    },
+    {
+        "id": 18,
+        "category": "History",
+        "question": "In which year did the Titanic sink?",
+        "options": ["A) 1910", "B) 1911", "C) 1912", "D) 1913"],
+        "answer": "C"
+    },
+    {
+        "id": 19,
+        "category": "Pop Culture",
+        "question": "Who directed the movie 'Jurassic Park'?",
+        "options": ["A) James Cameron", "B) Steven Spielberg", "C) George Lucas", "D) Christopher Nolan"],
+        "answer": "B"
+    },
+    {
+        "id": 20,
+        "category": "Technology",
+        "question": "What does CPU stand for?",
+        "options": ["A) Central Processing Unit", "B) Computer Personal Unit", "C) Central Program Utility", "D) Computer Processing Unit"],
+        "answer": "A"
+    },
+    {
+        "id": 21,
+        "category": "Science",
+        "question": "How many bones are in the human body?",
+        "options": ["A) 186", "B) 206", "C) 226", "D) 246"],
+        "answer": "B"
+    },
+    {
+        "id": 22,
+        "category": "Geography",
+        "question": "What is the largest ocean on Earth?",
+        "options": ["A) Atlantic", "B) Indian", "C) Arctic", "D) Pacific"],
+        "answer": "D"
+    },
+    {
+        "id": 23,
+        "category": "History",
+        "question": "Who was the first President of the United States?",
+        "options": ["A) Thomas Jefferson", "B) John Adams", "C) George Washington", "D) Benjamin Franklin"],
+        "answer": "C"
+    },
+    {
+        "id": 24,
+        "category": "Pop Culture",
+        "question": "Which superhero is known as the 'Dark Knight'?",
+        "options": ["A) Superman", "B) Batman", "C) Spider-Man", "D) Iron Man"],
+        "answer": "B"
+    },
+    {
+        "id": 25,
+        "category": "Technology",
+        "question": "Who founded Microsoft?",
+        "options": ["A) Steve Jobs", "B) Mark Zuckerberg", "C) Bill Gates", "D) Elon Musk"],
+        "answer": "C"
+    },
+    {
+        "id": 26,
+        "category": "Science",
+        "question": "What is H2O commonly known as?",
+        "options": ["A) Oxygen", "B) Hydrogen", "C) Water", "D) Carbon Dioxide"],
+        "answer": "C"
+    },
+    {
+        "id": 27,
+        "category": "Geography",
+        "question": "Which country has the most time zones?",
+        "options": ["A) USA", "B) Russia", "C) China", "D) France"],
+        "answer": "D"
+    },
+    {
+        "id": 28,
+        "category": "History",
+        "question": "What year did the Berlin Wall fall?",
+        "options": ["A) 1987", "B) 1988", "C) 1989", "D) 1990"],
+        "answer": "C"
+    },
+    {
+        "id": 29,
+        "category": "Pop Culture",
+        "question": "Which streaming service created 'Stranger Things'?",
+        "options": ["A) Amazon Prime", "B) Netflix", "C) Hulu", "D) Disney+"],
+        "answer": "B"
+    },
+    {
+        "id": 30,
+        "category": "Technology",
+        "question": "What does AI stand for?",
+        "options": ["A) Automated Intelligence", "B) Artificial Intelligence", "C) Advanced Integration", "D) Automatic Interface"],
+        "answer": "B"
+    },
+    {
+        "id": 31,
+        "category": "Science",
+        "question": "What gas do plants absorb from the atmosphere?",
+        "options": ["A) Oxygen", "B) Nitrogen", "C) Carbon Dioxide", "D) Hydrogen"],
+        "answer": "C"
+    },
+    {
+        "id": 32,
+        "category": "Geography",
+        "question": "Mount Everest is located in which mountain range?",
+        "options": ["A) Alps", "B) Andes", "C) Rockies", "D) Himalayas"],
+        "answer": "D"
+    },
+    {
+        "id": 33,
+        "category": "History",
+        "question": "Who invented the telephone?",
+        "options": ["A) Thomas Edison", "B) Nikola Tesla", "C) Alexander Graham Bell", "D) Benjamin Franklin"],
+        "answer": "C"
+    },
+    {
+        "id": 34,
+        "category": "Pop Culture",
+        "question": "What is the name of Harry Potter's owl?",
+        "options": ["A) Hedwig", "B) Errol", "C) Pigwidgeon", "D) Fawkes"],
+        "answer": "A"
+    },
+    {
+        "id": 35,
+        "category": "Technology",
+        "question": "What programming language is known for its use in web development and has a coffee cup as its logo?",
+        "options": ["A) Python", "B) JavaScript", "C) Java", "D) C++"],
+        "answer": "C"
+    },
+    {
+        "id": 36,
+        "category": "Science",
+        "question": "What is the nearest star to Earth?",
+        "options": ["A) Alpha Centauri", "B) Sirius", "C) The Sun", "D) Proxima Centauri"],
+        "answer": "C"
+    },
+    {
+        "id": 37,
+        "category": "Geography",
+        "question": "What is the capital of Canada?",
+        "options": ["A) Toronto", "B) Vancouver", "C) Montreal", "D) Ottawa"],
+        "answer": "D"
+    },
+    {
+        "id": 38,
+        "category": "History",
+        "question": "In which city was the first atomic bomb dropped?",
+        "options": ["A) Nagasaki", "B) Hiroshima", "C) Tokyo", "D) Kyoto"],
+        "answer": "B"
+    },
+    {
+        "id": 39,
+        "category": "Pop Culture",
+        "question": "Who is the creator of Facebook?",
+        "options": ["A) Bill Gates", "B) Steve Jobs", "C) Mark Zuckerberg", "D) Elon Musk"],
+        "answer": "C"
+    },
+    {
+        "id": 40,
+        "category": "Technology",
+        "question": "What does URL stand for?",
+        "options": ["A) Uniform Resource Locator", "B) Universal Resource Link", "C) Unified Reference Location", "D) Universal Reference Locator"],
+        "answer": "A"
+    },
+    {
+        "id": 41,
+        "category": "Science",
+        "question": "What is the boiling point of water in Celsius?",
+        "options": ["A) 90°C", "B) 100°C", "C) 110°C", "D) 120°C"],
+        "answer": "B"
+    },
+    {
+        "id": 42,
+        "category": "Geography",
+        "question": "Which desert is the largest in the world?",
+        "options": ["A) Gobi", "B) Sahara", "C) Arabian", "D) Antarctic"],
+        "answer": "D"
+    },
+    {
+        "id": 43,
+        "category": "History",
+        "question": "What was the name of the ship that brought the Pilgrims to America?",
+        "options": ["A) Santa Maria", "B) Mayflower", "C) Nina", "D) Pinta"],
+        "answer": "B"
+    },
+    {
+        "id": 44,
+        "category": "Pop Culture",
+        "question": "Which actor played Iron Man in the Marvel Cinematic Universe?",
+        "options": ["A) Chris Evans", "B) Chris Hemsworth", "C) Robert Downey Jr.", "D) Mark Ruffalo"],
+        "answer": "C"
+    },
+    {
+        "id": 45,
+        "category": "Technology",
+        "question": "What year was Google founded?",
+        "options": ["A) 1996", "B) 1998", "C) 2000", "D) 2002"],
+        "answer": "B"
+    },
+    {
+        "id": 46,
+        "category": "Science",
+        "question": "What is the most abundant element in the universe?",
+        "options": ["A) Oxygen", "B) Carbon", "C) Helium", "D) Hydrogen"],
+        "answer": "D"
+    },
+    {
+        "id": 47,
+        "category": "Geography",
+        "question": "What is the capital of Japan?",
+        "options": ["A) Kyoto", "B) Osaka", "C) Tokyo", "D) Hiroshima"],
+        "answer": "C"
+    },
+    {
+        "id": 48,
+        "category": "History",
+        "question": "Who was the ancient Egyptian queen known for her relationship with Julius Caesar?",
+        "options": ["A) Nefertiti", "B) Cleopatra", "C) Hatshepsut", "D) Ankhesenamun"],
+        "answer": "B"
+    },
+    {
+        "id": 49,
+        "category": "Pop Culture",
+        "question": "What is the highest-grossing film of all time (not adjusted for inflation)?",
+        "options": ["A) Titanic", "B) Avatar", "C) Avengers: Endgame", "D) Star Wars"],
+        "answer": "B"
+    },
+    {
+        "id": 50,
+        "category": "Technology",
+        "question": "What does RAM stand for in computer terms?",
+        "options": ["A) Random Access Memory", "B) Rapid Application Module", "C) Read And Modify", "D) Remote Access Management"],
+        "answer": "A"
+    }
+]
