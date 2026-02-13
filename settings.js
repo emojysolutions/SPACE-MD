@@ -1,6 +1,9 @@
 require('dotenv').config();
 
 module.exports = {
+  //Bot name
+  BOT_NAME: process.env.BOT_NAME || 'Queen Angela MD',
+  
   //Enter your session id here (optional)
   SESSION_ID: process.env.SESSION_ID || '',
   
@@ -36,4 +39,4 @@ module.exports = {
 };
 
 // You must set GITHUB_USERNAME to use the bot unless you are a premium user
-// You must fork SPACE-MD repo in order to use the bot unless you're a premium user
+// You must fork the Queen Angela MD repo in order to use the bot unless you're a premium user

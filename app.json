@@ -1,9 +1,9 @@
 {
-  "name": "SPACE-MD",
-  "description": "SPACE-MD, your day to day assistant!",
+  "name": "queen-angela-md",
+  "description": "Queen Angela MD — Your Royal WhatsApp Assistant",
   "logo": "https://files.catbox.moe/ia1mgm.jpg",
   "keywords": [],
-  "repository": "https://github.com/Dark-Xploit/SPACE-MD",
+  "repository": "https://github.com/emojysolutions/SPACE-MD",
   "stack": "container",
   "addons": [
     {
