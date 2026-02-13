@@ -5,7 +5,7 @@ const path = require('path');
 /**
  * AI Command - Smart Auto-Router
  * Automatically picks the best available model
- * Priority: GPT-5 > Claude Opus > Gemini > DeepSeek
+ * Priority: GPT-4o > Claude Opus > Gemini > DeepSeek
  * Usage: !ai <message> or !ai clear or !ai models
  */
 module.exports = {
@@ -120,7 +120,7 @@ async function showModelsList(sock, userId) {
   const imagineAvailable = aiManager.isProviderAvailable('imagine');
   const visionAvailable = aiManager.isProviderAvailable('vision');
 
-  message += `${gptAvailable ? '✅' : '❌'} *ChatGPT GPT-5*     → \`!gpt <message>\`\n`;
+  message += `${gptAvailable ? '✅' : '❌'} *ChatGPT GPT-4o*     → \`!gpt <message>\`\n`;
   message += `${gpt4Available ? '✅' : '❌'} *ChatGPT GPT-4o*    → \`!gpt4 <message>\`\n`;
   message += `${claudeAvailable ? '✅' : '❌'} *Claude Opus*        → \`!claude <message>\`\n`;
   message += `${sonnetAvailable ? '✅' : '❌'} *Claude Sonnet*      → \`!sonnet <message>\`\n`;

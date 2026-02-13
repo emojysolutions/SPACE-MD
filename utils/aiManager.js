@@ -157,7 +157,7 @@ class AIManager {
   }
 
   /**
-   * OpenAI Chat Implementation (GPT-4o / GPT-5)
+   * OpenAI Chat Implementation (GPT-4o)
    */
   async chatOpenAI(model, messages, systemPrompt = null) {
     const messagesWithSystem = systemPrompt 
@@ -326,7 +326,7 @@ class AIManager {
 
   /**
    * Smart routing - pick the best available model
-   * Priority: GPT-5 > Claude Opus > Gemini > DeepSeek
+   * Priority: GPT-4o > Claude Opus > Gemini > DeepSeek
    */
   async smartChat(userId, message, systemPrompt = null) {
     const priority = ['gpt', 'claude', 'gemini', 'deepseek'];

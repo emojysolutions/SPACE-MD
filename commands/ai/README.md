@@ -47,7 +47,7 @@ Use `!persona <name>` to set, and `!persona reset` to return to default.
 AI API keys are configured in `.env` file:
 
 ```env
-# OpenAI (for GPT-4o, GPT-5, DALL-E 3, Vision)
+# OpenAI (for GPT-4o, DALL-E 3, Vision)
 OPENAI_API_KEY=sk-your-openai-key
 
 # Anthropic (for Claude Opus, Claude Sonnet)
@@ -65,7 +65,7 @@ DEEPSEEK_API_KEY=your-deepseek-key
 ```
 commands/ai/
 ├── ai.js          # Smart auto-router
-├── gpt.js         # ChatGPT GPT-5
+├── gpt.js         # ChatGPT GPT-4o
 ├── gpt4.js        # ChatGPT GPT-4o
 ├── claude.js      # Claude Opus
 ├── sonnet.js      # Claude Sonnet
